@@ -24,7 +24,7 @@ jobs:
       - name: Directory permissions
         run: chmod -R 777 storage/cache
       - name: Sync files
-        uses: Samkirland/FTP-Deploy-Action@4.0.0
+        uses: appleboy/ftp-action@master
         with:
           server: ${{ secrets.CPANEL_HOST }}
           USERNAME: ${{ secrets.CPANEL_USERNAME }}
