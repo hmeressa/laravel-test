@@ -7,7 +7,7 @@ on:
 
 jobs:
   web-deploy:
-    name: Deploy
+    name: Deploys
     runs-on: ubuntu-latest
     steps:
       - name: Get the latest codes
