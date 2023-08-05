@@ -21,6 +21,8 @@ jobs:
         run: php artisan key:generate
       - name: Generate storage link
         run: php artisan storage:link
+      - name: Ensure storage/cache directory exists
+        run: mkdir -p storage/cache
       - name: Directory permissions
         run: chmod -R 777 storage/cache
       - name: Sync files
